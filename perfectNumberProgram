@@ -1,0 +1,16 @@
+def perfectnum(num):
+    res=0
+    for i in range(1,num):
+       if(num%i==0):
+           res=res+i
+    if(res==num):
+         return "True"
+    else:
+        return "False"
+
+num=int(input("enter a number"))
+print(perfectnum(num))
+
+output:
+enter a number 28
+True
