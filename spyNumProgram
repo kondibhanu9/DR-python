@@ -1,0 +1,21 @@
+def isspy(num):
+        res=0
+        prod=1
+        rem=0
+
+        while num>0:
+            rem=num%10
+            res=res+rem
+            prod=prod*rem
+            num=num//10
+        return res==prod
+
+num=int(input("enter a num"))
+print(isspy(num))   
+
+OUTPUT:
+enter a num1124
+True
+
+   
+            
