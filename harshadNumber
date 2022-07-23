@@ -1,0 +1,16 @@
+HARSHAD NUMBER:
+def isharshad(n):
+    t=n
+    rem=0
+    s=0
+    while n>0:
+        rem=n%10
+        s=s+rem
+        n=n//10
+    return t%s==0
+n=int(input("Enter a number"))
+print(isharshad(n))
+
+OUTPUT:
+Enter a number 1729
+True
